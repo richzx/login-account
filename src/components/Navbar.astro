@@ -1,0 +1,48 @@
+---
+import IconBar from "../assets/icono-bar.svg";
+---
+
+<header class="w-full px-5 md:px-10 py-4">
+  <nav class="w-full flex justify-between items-center">
+    <button id="menu-toggle" class="lg:hidden">
+      <img src={IconBar.src} alt="icono del menu bar" width="20px" />
+    </button>
+
+    <nav id="navbar-menu" class="absolute hidden flex top-16 flex-col gap-5 bg-[#333] p-4 rounded-xl lg:relative lg:flex-row lg:bg-transparent lg:p-0 lg:top-0 lg:gap-10">
+      <a href="#" class="text-base text-[#FFF] lg:text-[#111] font-medium">Home</a>
+      <a href="#" class="text-base text-[#FFF] lg:text-[#666666c9] lg:hover:text-[#111]">Web designs</a>
+      <a href="#" class="text-base text-[#FFF] lg:text-[#666666c9] lg:hover:text-[#111]">Mobile designs</a>
+      <a href="#" class="text-base text-[#FFF] lg:text-[#666666c9] lg:hover:text-[#111]">Design principles</a>
+      <a href="#" class="text-base text-[#FFF] lg:text-[#666666c9] lg:hover:text-[#111]">Ilustrations</a>
+    </nav>
+
+    <div class="flex gap-4">
+      <a
+        href="/login"
+        class="text-base text-[#111] py-2 px-6 rounded-lg border border-[#111]"
+      >
+        Log in
+      </a>
+      <a href="/" class="text-base text-[#FFF] py-2 px-6 rounded-lg bg-[#111]">
+        Sign up
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script is:inline>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navbarMenu = document.getElementById("navbar-menu");
+
+  menuToggle.addEventListener("click", () => {
+    navbarMenu.classList.toggle("hidden");
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1024) {
+      navbarMenu.classList.remove("hidden");
+    } else {
+      navbarMenu.classList.add("hidden");
+    }
+  });
+</script>

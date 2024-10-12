@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Layout.astro";
+import IconFacebookMedia from "../assets/facebookmedia-logo.svg";
+import IconAppleMedia from "../assets/applemedia-logo.svg";
+import IconGoogle from "../assets/google-logo.svg";
+---
+
+<Layout title="Login - rodz">
+  <main class="pt-12 px-10 w-full flex justify-center">
+    <section class="w-full md:w-fit flex gap-12 flex-col items-center">
+      <h2 class="text-[32px] leading-none text-[#333] font-medium">
+        Log in to your design account
+      </h2>
+      <div class="w-fit flex gap-12 flex-col">
+        <div class="flex flex-col gap-4">
+          <button
+            class="w-full flex gap-4 justify-center items-center text-base sm:text-xl py-4 px-20 border border-[#111] bg-transparent text-[#111] rounded-full active:ring-4 active:ring-slate-200"
+          >
+            <img
+              src={IconFacebookMedia.src}
+              alt="icono de google crear cuenta"
+            />
+            Continue with Facebook
+          </button>
+          <button
+            class="w-full flex gap-4 justify-center items-center text-base sm:text-xl py-4 border border-[#111] bg-transparent text-[#111] rounded-full active:ring-4 active:ring-slate-200"
+          >
+            <img src={IconGoogle.src} alt="icono de google crear cuenta" />
+            Continue with Google
+          </button>
+          <button
+            class="w-full flex gap-4 justify-center items-center text-base sm:text-xl py-4 border border-[#111] bg-transparent text-[#111] rounded-full active:ring-4 active:ring-slate-200"
+          >
+            <img src={IconAppleMedia.src} alt="icono de google crear cuenta" />
+            Continue with Apple
+          </button>
+        </div>
+        <div class="w-full flex items-center gap-6">
+          <hr class="w-full" />
+          <span class="text-[#666] text-xl">OR</span>
+          <hr class="w-full" />
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="w-full flex flex-col gap-1">
+            <span class="text-base text-[#666]">Email address</span>
+            <input
+              type="email"
+              class="w-full max-w-[534px] border border-[#6666666e] rounded-lg p-2"
+            />
+          </div>
+          <div class="w-full flex flex-col gap-1">
+            <span class="text-base text-[#666]">Your password</span>
+            <input
+              type="password"
+              class="w-full max-w-[534px] border border-[#6666666e] rounded-lg p-2"
+            />
+          </div>
+          <div class="w-full max-w-[534px] flex items-start gap-2">
+            <input type="checkbox" name="" id="" />
+            <span class="text-base text-[#111]"
+              >Keep me signed in until I sign out</span
+            >
+          </div>
+          <button
+            class="w-full flex gap-4 justify-center items-center text-xl py-4 border border-[#111] bg-transparent text-[#111] rounded-full active:ring-4 active:ring-slate-200"
+          >
+            Log in
+          </button>
+        </div>
+      </div>
+      <hr class="w-full" />
+      <div class="flex flex-col items-center gap-4">
+        <a href="#" class="text-2xl text-[#333]">Don't have an account?</a>
+        <button
+          class="w-full sm:w-[451px] flex gap-4 justify-center items-center text-xl py-4 border border-[#111] bg-transparent text-[#111] rounded-full active:ring-4 active:ring-slate-200"
+        >
+          <!-- w-full max-w-[534px] -->
+          Sign up
+        </button>
+      </div>
+    </section>
+  </main>
+</Layout>

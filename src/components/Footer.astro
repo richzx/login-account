@@ -1,0 +1,95 @@
+---
+import IconGlePlay from "../assets/icono-googleplay.svg";
+import IconAppStore from "../assets/icono-appstore.svg";
+import LogoFacebook from "../assets/facebook-logo.svg";
+import LogoTwitter from "../assets/twitter-logo.svg";
+import LogoInstagram from "../assets/instagram-logo.svg";
+---
+
+<footer class="w-full py-12 px-5 lg:px-28">
+  <section class="w-full">
+    <hr class="w-full" />
+    <div
+      class="p-6 lg:p-11 w-full flex flex-col items-center gap-8 md:flex-row lg:gap-0 justify-between"
+    >
+      <div
+        class="w-full max-w-[750px] flex flex-wrap justify-around gap-5 lg:justify-normal lg:gap-16"
+      >
+        <div class="w-fit flex flex-col gap-2">
+          <h2 class="text-base font-medium text-[#333]">Product</h2>
+          <a href="#" class="text-sm text-[#666]">Pricing</a>
+          <a href="#" class="text-sm text-[#666]">Solutions</a>
+          <a href="#" class="text-sm text-[#666]">Education</a>
+          <a href="#" class="text-sm text-[#666]">Team plans</a>
+        </div>
+        <div class="w-fit flex flex-col gap-2">
+          <h2 class="text-base font-medium text-[#333]">About us</h2>
+          <a href="#" class="text-sm text-[#666]">About</a>
+          <a href="#" class="text-sm text-[#666]">Branding</a>
+          <a href="#" class="text-sm text-[#666]">Newsroom</a>
+          <a href="#" class="text-sm text-[#666]">Partnerships</a>
+          <a href="#" class="text-sm text-[#666]">Affiliates</a>
+          <a href="#" class="text-sm text-[#666]">Careers</a>
+        </div>
+        <div class="w-fit flex flex-col gap-2">
+          <h2 class="text-base font-medium text-[#333]">Help and support</h2>
+          <a href="#" class="text-sm text-[#666]">Help center</a>
+          <a href="#" class="text-sm text-[#666]">Contact us</a>
+          <a href="#" class="text-sm text-[#666]">Privacy & Terms</a>
+          <a href="#" class="text-sm text-[#666]">Safety information</a>
+          <a href="#" class="text-sm text-[#666]">Sitemap</a>
+        </div>
+        <div class="w-fit flex flex-col gap-2">
+          <h2 class="text-base font-medium text-[#333]">Community</h2>
+          <a href="#" class="text-sm text-[#666]">Agencies</a>
+          <a href="#" class="text-sm text-[#666]">Freelancers</a>
+          <a href="#" class="text-sm text-[#666]">Engineers</a>
+        </div>
+      </div>
+
+      <div class="w-fit flex flex-wrap justify-center gap-4">
+        <button
+          class="w-fit px-3 py-1 flex gap-2 items-center border border-[#a6a6a6] rounded-lg"
+        >
+          <img src={IconAppStore.src} alt="icono google play" />
+          <div class="flex flex-col gap-0">
+            <span class="text-sm text-[#111]">Download on the</span>
+            <h2 class="text-xl lg:text-[22px] font-semibold">App Store</h2>
+          </div>
+        </button>
+        <button
+          class="w-fit px-3 py-1 flex gap-2 items-center border border-[#a6a6a6] rounded-lg"
+        >
+          <img src={IconGlePlay.src} alt="icono google play" />
+          <div class="flex flex-col gap-0">
+            <span class="text-sm text-[#111]">GET IN ON</span>
+            <h2 class="text-xl lg:text-[22px] font-semibold">Google Play</h2>
+          </div>
+        </button>
+      </div>
+    </div>
+    <hr class="w-full" />
+    <div class="w-full p-5 lg:p-10 flex flex-col md:flex-row-reverse items-center gap-5 md:justify-between">
+      <div class="flex items-center gap-4">
+        <a href="#">
+          <img src={LogoFacebook.src} alt="icono facebook de la empresa" />
+        </a>
+        <a href="#">
+          <img src={LogoTwitter.src} alt="icono twitter de la empresa" />
+        </a>
+        <a href="#">
+          <img src={LogoInstagram.src} alt="icono instagram de la empresa" />
+        </a>
+      </div>
+
+      <div class="flex flex-col items-center sm:flex-row-reverse gap-14">
+        <div class="flex gap-6">
+          <a class="text-sm text-[#333]" href="#">Help</a>
+          <a class="text-sm text-[#333]" href="#">Privacy</a>
+          <a class="text-sm text-[#333]" href="#">Terms</a>
+        </div>
+        <h3 class="text-sm text-[#333] font-medium">@copyright - 2024</h3>
+      </div>
+    </div>
+  </section>
+</footer>
